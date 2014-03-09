@@ -1,0 +1,4 @@
+intranet_intra_homepage:
+    pattern:  /
+    defaults: { _controller: IntranetIntraBundle:Admin:index }
+

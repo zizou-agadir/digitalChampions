@@ -1,0 +1,29 @@
+admin_home:
+    pattern: /home
+    defaults: { _controller: IntranetIntraBundle:Admin:index}
+    requirements:
+        _method: GET|POST
+
+
+admin_ajouter_user:
+    pattern: /{id]/ajouter
+    defaults: { _controller: IntranetIntraBundle:Admin:ajouter}
+    requirements:
+        _method: GET|POST
+
+
+admin_editer_user:
+    pattern: /{id]/editer
+    defaults: { _controller: IntranetIntraBundle:Admin:editer}
+    requirements:
+        id: \d+
+        _method: GET|POST
+
+
+
+admin_supprimer_user:
+    pattern: /{id]/supprimer
+    defaults: { _controller: IntranetIntraBundle:Admin:supprimer}
+    requirements:
+        id: \d+
+        _method: DELETE
